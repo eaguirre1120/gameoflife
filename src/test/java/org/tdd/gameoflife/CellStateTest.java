@@ -15,8 +15,11 @@ public class CellStateTest {
         Assert.assertEquals( expected, cellState.ALIVE);
     }
 
+    @Test
     public void testCellHasStateDead()
     {
+        CellState cellState = new CellState();
 
+        Assert.assertEquals(0, cellState.DEAD);
     }
 }
